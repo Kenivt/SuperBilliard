@@ -53,10 +53,10 @@ IBattle类中有如下组成：
 
   3. PacketManager通过类似GF的NetWorkManager来统一管理和解析消息包。
 
-### 链接
+### 致谢仓库
 
 [GameFramework](https://github.com/EllanJiang/GameFramework)
 
-[TowerDefense-GameFramework-Demo]([DrFlower/TowerDefense-GameFramework-Demo: 基于Unity开源框架GameFramewrk实现的一款塔防游戏Demo (github.com)](https://github.com/DrFlower/TowerDefense-GameFramework-Demo))
+[TowerDefense-GameFramework-Demo: 基于Unity开源框架GameFramewrk实现的一款塔防游戏Demo (github.com)](https://github.com/DrFlower/TowerDefense-GameFramework-Demo)
 
 [KCP_Csharp](https://github.com/KumoKyaku/KCP)
