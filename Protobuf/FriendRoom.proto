@@ -1,0 +1,90 @@
+syntax = "proto3";
+package GameMessage;
+import "GameMessage.proto";
+
+//邀请结果
+//被邀请者同意后出现的错误信息
+enum InvitationResult
+{
+	None = 0;
+	Success = 1;
+	RoomIsFull = 2;
+	RoomNotExist = 3;
+}
+
+message CSInviteFriendBattle
+{
+	string ownUserName = 1;
+	string inviteeUserName = 2;
+	GameType gameType = 3;
+	int32 roomId = 4;
+}
+
+message SCInviteFriendBattle
+{
+	string inviteeUsername = 1;
+	GameType gameType = 2;
+	int32 roomId = 3;
+}
+
+//接受邀请
+message CSAcceptGameInvitation
+{
+	string inviterUserName = 1;
+	string ownUsername = 2;
+	GameType gameType = 3;
+	int32 roomId = 4;
+}
+
+//接收邀请后的回调,包含是否成功执行和错误的信息InvitationResult
+message SCAcceptGameInvitation
+{
+	string inviterUsername = 1;
+	string ownUsername = 2;
+	GameType gameType = 3;
+	InvitationResult result = 4;
+	bool isReady = 5;
+}
+
+//被邀请者加入房间的信息
+message SCInviteeEnterRoom
+{
+	string inviteeUsername = 1;	
+	GameType gameType = 2;
+}
+
+//创建房间
+message CSCreateRoom
+{
+	string username = 1;
+	GameType gameType = 2;
+}
+
+message SCCreateRoom
+{
+	GameType gameType = 1;
+	int32 roomId = 2;
+}
+
+//准备游戏
+message CSReadyGame
+{
+	string username = 1;
+	bool isReady = 2;
+}
+
+message SCReadyGame
+{
+	string username = 1;
+	bool isReady = 2;
+}
+//离开房间
+message CSLeaveRoom
+{
+	string username = 1;
+}
+
+message SCLeaveRoom
+{
+	string username = 1;
+}

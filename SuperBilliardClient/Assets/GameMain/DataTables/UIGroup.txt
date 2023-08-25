@@ -1,0 +1,9 @@
+#	UI组配置表			
+#	Id		Name	Depth
+#	int		string	int
+#	配置编号	策划备注	UI组名字	深度
+	101		BattleUIGroup	2
+	102		LoginMenuUIGroup	1
+	103		MainMenuUIGroup	3
+	104		MessageUIGroup	5
+	105		GameStateUIGroup	6

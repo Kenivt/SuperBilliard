@@ -1,0 +1,18 @@
+﻿using GameMessage;
+using GameFramework.Network;
+using System.Collections.Generic;
+
+namespace SuperBilliard
+{
+    #ROOTNAMESPACEBEGIN#
+    public class #SCRIPTNAME# : PacketHandlerBase
+    {
+        public override int Id => SuperBilliard.Constant.PacketTypeId.HeartBeat;
+
+        public override void Handle(object sender, Packet packet)
+        {
+
+        }
+    #ROOTNAMESPACEEND#
+    }
+}

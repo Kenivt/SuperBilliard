@@ -1,0 +1,69 @@
+syntax = "proto3";
+package GameMessage;
+
+enum ReturnResult
+{
+	None=0;
+	Success=1;
+	Failure=2;
+}
+
+message CSRigister
+{
+	string username=1;
+	string password=2;
+}
+
+message SCRigister
+{
+	ReturnResult result=1;
+}
+
+message CSLogin
+{
+	string username=1;
+	string password=2; 
+}
+
+message SCLogin
+{
+	ReturnResult result=1;
+	string username=2;
+}
+
+message SCPlayerMessage
+{
+	string pm_userName=1;
+	string pm_snikName=2;
+	int32 pm_iconId=3;
+	int32 pm_level=4;
+	string pm_description=5;
+	int32 pm_faceId=6;
+	int32 pm_hairId = 7;
+	int32 pm_bodyId = 8;
+	int32 pm_kitId = 9;
+}
+
+message CSSavePlayerMessage
+{	string userName=1;
+	string snikName=2;
+	int32 faceId= 3;
+	int32 hairId = 4;
+	int32 bodyId = 5;
+	int32 kitId = 6;
+	string description=7;
+}
+
+
+message CSGetPlayerMessage
+{
+	string gpm_username = 1;
+}
+
+//服务器的回复信息
+message SCReturnMessage {
+  int32 csPacketId = 1;
+  ReturnResult result = 2;
+  string message = 3;
+}
+

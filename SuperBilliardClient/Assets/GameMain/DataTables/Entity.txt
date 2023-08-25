@@ -1,0 +1,7 @@
+#	实体配置表				
+#	Id		Name	AssetId	EntityGroupId
+#	int		string	int	int
+#	配置编号	策划备注	物体名字	资源ID	实体组Id
+	10001	花式台球	FancyBilliard	10001	1001
+	10002	球杆	Cue	10002	1001
+	10003	斯诺克台球	SnokkerBilliard	10003	1001

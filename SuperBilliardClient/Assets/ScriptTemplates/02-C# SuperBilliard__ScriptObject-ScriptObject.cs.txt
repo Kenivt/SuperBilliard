@@ -1,0 +1,14 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace SuperBilliard
+{
+    #ROOTNAMESPACEBEGIN#
+	[CreateAssetMenu(menuName = (""),fileName = (""))]
+	public class #SCRIPTNAME# : ScriptableObject
+	{
+		#NOTRIM#
+	}
+	#ROOTNAMESPACEEND#
+}

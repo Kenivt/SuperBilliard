@@ -1,0 +1,12 @@
+syntax = "proto3";
+package GameMessage;
+
+message CSHeartBeat
+{
+	int32 heartBeat = 1;
+}
+
+message SCConfirm
+{
+	int32 confirm = 1;
+}

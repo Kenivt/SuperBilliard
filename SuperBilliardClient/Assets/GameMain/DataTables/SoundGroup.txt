@@ -1,0 +1,8 @@
+#	声音组配置表						
+#	Id		Name	SoundAgentCount	AvoidBeingReplacedBySamePriority	Mute	Volume
+#	int		string	int	bool	bool	float
+#	配置编号	策划备注	声音组名字	声音代理数	声音组中的声音是否避免被同优先级声音替换	静音	音量（0~1）
+	101	特效音效	SFX	6	False	False	0.7
+	102	UI音效	SFX/UI	4	False	False	0.7
+	103	音乐音效	Music	1	True	False	0.7
+	104	台球音效	SFX/Play/BilliardCollide	6	False	False	0.7

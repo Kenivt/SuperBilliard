@@ -1,0 +1,6 @@
+﻿using SuperBilliard;
+
+namespace GameMessage
+{
+
+}

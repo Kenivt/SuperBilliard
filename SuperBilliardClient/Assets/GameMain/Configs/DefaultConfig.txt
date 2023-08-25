@@ -1,0 +1,11 @@
+﻿#	默认配置		
+#	配置项	策划备注	配置值
+	Game.Id		Star Force
+	Billiard		10001
+	Cue		10002
+	BilliardMaterialAssetId		30000
+	BilliardAtlas		31001
+	FancyMatchBattle		101
+	MainMenu		102
+	SyncInterval		0.035
+	PlayerImageAtlas		10001

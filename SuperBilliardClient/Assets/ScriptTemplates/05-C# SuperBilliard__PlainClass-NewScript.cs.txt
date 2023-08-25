@@ -1,0 +1,12 @@
+﻿using UnityEngine;
+using UnityGameFramework;
+namespace SuperBilliard
+{
+    #ROOTNAMESPACEBEGIN#
+    public class #SCRIPTNAME#
+    {
+
+
+    }
+#ROOTNAMESPACEEND#
+}

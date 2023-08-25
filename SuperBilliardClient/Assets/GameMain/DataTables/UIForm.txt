@@ -1,0 +1,22 @@
+#	界面配置表						
+#	Id		Name	UIGroupId	AssetId	AllowMultiInstance	PauseCoveredUIForm
+#	int		string	int	int	bool	bool
+#	界面编号	策划备注	界面名字	界面组Id	资源Id	是否允许多个界面实例	是否暂停被其覆盖的界面
+	101	能量条	StorageBar	101	2001	False	False
+	102	对局提示UI	BattleTipUIForm	101	2002	False	False
+	103	登录页面	LoginPanel	102	2003	False	False
+	104	台球模式	GameModeUIForm	103	2004	False	False
+	105	信息栏	MessageUIForm	104	2005	False	False
+	106	等待匹配	WaitingUIForm	104	2006	False	False
+	107	游戏开始	GameStartUIForm	105	2007	False	False
+	108	游戏结束	GameOverUIForm	105	2008	False	False
+	109	台球信息	BilliardMessage	101	2009	False	False
+	110	游戏设置	GameSettingsUIForm	103	2010	False	True
+	111	主界面UI	MainMenuUIForm	103	2011	False	False
+	112	自定义角色形象	PlayerImageCostomUIForm	103	2012	False	True
+	113	好友列表	FriendUIForm	103	2013	False	True
+	114	好友申请列表	FriendRequestUIForm	103	2014	False	True
+	115	好友房间	FriendRoom	103	2015	False	True
+	116	好友邀请	FriendInvitation	104	2016	False	True
+	117	斯诺克好友信息	SnokkerPlayerDataUIForm	101	2017	False	False
+	118	提示信息框	PromptUIForm	104	2018	False	False

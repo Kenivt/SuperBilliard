@@ -1,0 +1,9 @@
+#	场景配置表			
+#	Id		AssetId	Procedure
+#	int		int	string
+#	场景编号	备注	资源Id	流程名称
+	101	启动场景	101	All
+	102	主菜单场景	102	ProcedureMainMenu
+	103	花式台球场景	103	ProcedureLevel
+	104	登录场景	104	ProcedureLogin
+	105	斯诺克台球场景	105	ProcedureLevel

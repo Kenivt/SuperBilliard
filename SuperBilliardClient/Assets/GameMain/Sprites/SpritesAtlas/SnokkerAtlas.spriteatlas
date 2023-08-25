@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SnokkerAtlas
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 1
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 1774770096, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: -967766888, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: 947464989, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: -64308907, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: -998290803, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: -844996017, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: -2127852163, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: 355768340, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    - {fileID: 253904491, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -967766888, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: 1774770096, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: -64308907, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: 947464989, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: -844996017, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: -998290803, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: 355768340, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: -2127852163, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  - {fileID: 253904491, guid: c680b7bcbf9f4a44cbaad3b8064a02c5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Snokker_1
+  - Snokker_0
+  - Snokker_3
+  - Snokker_2
+  - Snokker_5
+  - Snokker_4
+  - Snokker_7
+  - Snokker_6
+  - Snokker_8
+  m_RenderDataMap: {}
+  m_Tag: SnokkerAtlas
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

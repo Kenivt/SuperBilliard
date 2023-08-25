@@ -1,0 +1,10 @@
+#	声音资源配置表					
+#	Id		Name	AssetId	SoundGroupId	SoundPlayParamId
+#	int		string	int	int	int
+#	声音编号	策划备注	物体名字	资源ID名称	声音组Id	声音播放参数
+	10001	台球碰撞声音1	BilliardCollide	40001	104	103
+	10002	UI点击音效0	Click_Soft_00	40002	102	101
+	10003	UI点击音效1	Click_Soft_01	40003	102	101
+	10004	UI点击音效2	Click_Soft_02	40004	102	101
+	10005	胜利音效	Victory	40005	101	104
+	10006	失败音效	Defeated	40006	101	104

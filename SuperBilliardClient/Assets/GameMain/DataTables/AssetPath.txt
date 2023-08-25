@@ -1,0 +1,73 @@
+#	资源路径配置表			
+#	Id		AssetPath	ResourceGroupIndexs
+#	int		string	string
+#	资源编号	策划备注	资源路径	资源组Id
+#Scene				
+	101	启动场景	Assets/GameMain/Scene/GameLauncher.unity	1
+	102	主菜单场景	Assets/GameMain/Scene/MainMenu.unity	1
+	103	花式台球场景	Assets/GameMain/Scene/FancyBilliard.unity	1
+	104	登录场景	Assets/GameMain/Scene/Login.unity	1
+	105	斯诺克台球场景	Assets/GameMain/Scene/SnokkerBIlliard.unity	1
+#UIForm				
+	2001	能量条UI	Assets/GameMain/UI/UIForm/StorageBar.prefab	1
+	2002	对局的提示UI	Assets/GameMain/UI/UIForm/BattleTipUIForm.prefab	1
+	2003	登录UIForm	Assets/GameMain/UI/UIForm/LoginPanel.prefab	1
+	2004	游戏模式	Assets/GameMain/UI/UIForm/GameModeUIForm.prefab	1
+	2005	信息栏	Assets/GameMain/UI/UIForm/MessageUIForm.prefab	1
+	2006	等待匹配	Assets/GameMain/UI/UIForm/WaitingUIForm.prefab	1
+	2007	游戏开始	Assets/GameMain/UI/UIForm/GameStartUIForm.prefab	1
+	2008	游戏结束	Assets/GameMain/UI/UIForm/GameOverUIForm.prefab	1
+	2009	台球信息	Assets/GameMain/UI/UIForm/BilliardMessage.prefab	1
+	2010	游戏设置	Assets/GameMain/UI/UIForm/GameSettingsUIForm.prefab	1
+	2011	主界面UI	Assets/GameMain/UI/UIForm/MainMenuUIForm.prefab	1
+	2012	自定义角色形象	Assets/GameMain/UI/UIForm/PlayerImageCostomUIForm.prefab	1
+	2013	好友列表	Assets/GameMain/UI/UIForm/FriendListUIForm.prefab	1
+	2014	好友申请列表	Assets/GameMain/UI/UIForm/FriendRequestUIForm.prefab	1
+	2015	好友房间	Assets/GameMain/UI/UIForm/FriendRoom.prefab	1
+	2016	好友邀请	Assets/GameMain/UI/UIForm/FriendInvitationUIForm.prefab	1
+	2017	斯诺克UI	Assets/GameMain/UI/UIForm/SnokkerPlayerDataUIForm.prefab	1
+	2018	提示信息框	Assets/GameMain/UI/UIForm/PromptUIForm.prefab	1
+#Entity				
+	10001	台球	Assets/GameMain/Entities/FancyBilliard.prefab	1
+	10002	台球杆	Assets/GameMain/Entities/Cue.prefab	1
+	10003	斯诺克台球	Assets/GameMain/Entities/SnokkerBilliard.prefab	1
+#材质				
+	30000	白球材质	Assets/GameMain/Materials/Balls/Ball_00.mat	1
+	30001	单色球材质	Assets/GameMain/Materials/Balls/Ball_01.mat	1
+	30002	单色球材质	Assets/GameMain/Materials/Balls/Ball_02.mat	1
+	30003	单色球材质	Assets/GameMain/Materials/Balls/Ball_03.mat	1
+	30004	单色球材质	Assets/GameMain/Materials/Balls/Ball_04.mat	1
+	30005	单色球材质	Assets/GameMain/Materials/Balls/Ball_05.mat	1
+	30006	单色球材质	Assets/GameMain/Materials/Balls/Ball_06.mat	1
+	30007	单色球材质	Assets/GameMain/Materials/Balls/Ball_07.mat	1
+	30008	黑球材质	Assets/GameMain/Materials/Balls/Ball_08.mat	1
+	30009	双色球材质	Assets/GameMain/Materials/Balls/Ball_09.mat	1
+	30010	双色球材质	Assets/GameMain/Materials/Balls/Ball_10.mat	1
+	30011	双色球材质	Assets/GameMain/Materials/Balls/Ball_11.mat	1
+	30012	双色球材质	Assets/GameMain/Materials/Balls/Ball_12.mat	1
+	30013	双色球材质	Assets/GameMain/Materials/Balls/Ball_13.mat	1
+	30014	双色球材质	Assets/GameMain/Materials/Balls/Ball_14.mat	1
+	30015	双色球材质	Assets/GameMain/Materials/Balls/Ball_15.mat	1
+#斯诺克球材质				
+	30016	红色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_1.mat	1
+	30017	黄色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_2.mat	1
+	30018	绿色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_3.mat	1
+	30019	棕色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_4.mat	1
+	30020	蓝色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_5.mat	1
+	30021	粉色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_6.mat	1
+	30022	黑色球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_7.mat	1
+	30023	白秋球材质	Assets/GameMain/Materials/SnokkerBilliard/Snokker_0.mat	1
+#SpriteAtlas				
+	31001	台球Sprite	Assets/GameMain/Sprites/SpritesAtlas/BilliardAtlas.spriteatlas	1
+	31002	Body	Assets/GameMain/Sprites/SpritesAtlas/BodyAtlas.spriteatlas	1
+	31003	Face	Assets/GameMain/Sprites/SpritesAtlas/FaceAtlas.spriteatlas	1
+	31004	Hair	Assets/GameMain/Sprites/SpritesAtlas/HairAtlas.spriteatlas	1
+	31005	Kit	Assets/GameMain/Sprites/SpritesAtlas/KitAtlas.spriteatlas	1
+	31006	Snokker	Assets/GameMain/Sprites/SpritesAtlas/SnokkerAtlas.spriteatlas	
+#Sound				
+	40001	台球碰撞音效	Assets/GameMain/Sound/BilliardCollide.mp3	1
+	40002	UI点击音效0	Assets/GameMain/Sound/Click_Soft_00.wav	1
+	40003	UI点击音效1	Assets/GameMain/Sound/Click_Soft_01.wav	1
+	40004	UI点击音效2	Assets/GameMain/Sound/Click_Soft_02.wav	1
+	40005	胜利	Assets/GameMain/Sound/Victory.wav	1
+	40006	失败	Assets/GameMain/Sound/Defeated.wav	1

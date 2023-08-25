@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionaries Language="ChineseSimplified">
+	<Dictionary>
+		<String Key="FRIENDINVITATION_TITLE" Value="好友邀请" />
+		<String Key="FRIENDINVITATION_ACCEPT" Value="接收" />
+		<String Key="FRIENDINVITATION_REFUSE" Value="拒绝" />
+		<String Key="FRIENDLIST_FRIENDBTN" Value="好友" />
+		<String Key="FRIENDLIST_ADDFRIEND" Value="申请好友" />
+		<String Key="FRIENDLIST_FRIEND_REQUESTLISTBTN" Value="申请好友列表" />
+		<String Key="FRIENDLIST_SEARCH_PROMPT" Value="输入想要搜寻的玩家账号..." />
+		<String Key="FRIENDREQUEST_TITLE" Value="好友申请列表" />
+		<String Key="GAMEMODE_MATCH_FANCYBILLIARD" Value="花式台球" />
+		<String Key="GAMEMODE_MARTH_SNOKKER" Value="斯诺克台球" />
+		<String Key="GAMEMODE_MATCH_CUSTOM" Value="自定义" />
+		<String Key="GAMEMODE_FRIEND_FANCYBILLIARD" Value="花式台球" />
+		<String Key="GAMEMODE_FRIEND_SNOKKER" Value="斯诺克台球" />
+		<String Key="REMATCH" Value="重新匹配" />
+		<String Key="BACKMAINMENU" Value="返回主菜单" />
+		<String Key="SETTING_SOUNDBTN" Value="声音" />
+		<String Key="SETTING_GRAPHICBTN" Value="图像" />
+		<String Key="SETTING_OTHERBTN" Value="其他" />
+		<String Key="SETTING_UI" Value="用户界面" />
+		<String Key="SETTING_SFX" Value="音效" />
+		<String Key="SETTING_MUSIC" Value="音乐" />
+		<String Key="SETTING_FULLSCREEN" Value="全屏" />
+		<String Key="SETTING_RESOLUTION" Value="分辨率" />
+		<String Key="SETTING_FRAMERATE" Value="帧率" />
+		<String Key="SETTING_LANGUAGE" Value="语言" />
+		<String Key="SETTING_QUIT" Value="退出游戏" />
+		<String Key="LOGIN_TITLE" Value="登录" />
+		<String Key="LOGIN_USERWORD" Value="用户名" />
+		<String Key="LOGIN_PASSWORD" Value="密码" />
+		<String Key="LOGINBTN" Value="登录" />
+		<String Key="LOGIN_SWITCHRIGISTERBTN" Value="注册" />
+		<String Key="RIGISTER_TITLE" Value="注册" />
+		<String Key="RIGISTER_USERNAME" Value="用户名" />
+		<String Key="RIGISTER_PASSWORD" Value="密码" />
+		<String Key="RIGISTER_CONFIRM" Value="确认密码" />
+		<String Key="RIGISTER_SWITCHLOGIN" Value="登录" />
+		<String Key="RIGISTERBTN" Value="注册" />
+		<String Key="MAINMENU_LEVEL" Value="等级:" />
+		<String Key="PLAYERIMAGE_SAVEMESSAGE" Value="保存" />
+		<String Key="PLAYERIMAGE_HAIR" Value="发型" />
+		<String Key="PLAYERIMAGE_FACE" Value="脸" />
+		<String Key="PLAYERIMAGE_BODY" Value="身体" />
+		<String Key="PLAYERIMAGE_KIT" Value="服装" />
+		<String Key="PLAYERIMAGE_TITLE" Value="自定义角色形象" />
+		<String Key="PROMPT_TITLE" Value="提示" />
+		<String Key="PROMPT_CONFIRMBTN" Value="确认" />
+		<String Key="PROMPT_CANCELBTN" Value="取消" />
+		<String Key="ENUM_PLAYERSTATUS_PLAYERSTAUSNONE" Value="离线" />
+		<String Key="ENUM_PLAYERSTATUS_IDLE" Value="空闲" />
+		<String Key="ENUM_PLAYERSTATUS_GAMING" Value="游戏中" />
+		<String Key="ENUM_PLAYERSTATUS_MATCHING" Value="匹配中" />
+		<String Key="ENUM_PLAYERSTATUS_WATTING" Value="等待中" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_FOUL" Value="犯规！回合结束" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_SCORE" Value="得分！ 回合开始" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_GAMETIED" Value="游戏平局!! 重新放置决胜球!!" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_VICTORY" Value="胜利!!" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_DEFEATED" Value="失败..." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_TIMEOUT" Value="超时！回合结束" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_PLACEWHITEBALL" Value="回合开始!请放置白球.." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITEENTERHOLE" Value="失败！白球进洞.." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_EIGHTENTERHOLE" Value="失败！八号球进洞,游戏判负.." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_FRISTCOLLIDEFOUL" Value="犯規！白球第壹次碰到的球為不同球色." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITECOLLIDEEDGE" Value="白球碰撞到墙壁.犯规!" />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITENOCOLLDE" Value="白球沒有碰撞到任何物體." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_FOULCOUNTFORMAT" Value="{0} 次失败 .如果失败超过 {1} 次.游戏将要结束." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_CONFIRMBILLIARDTYPE" Value="球色确定." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_STARTTURN" Value="回合开始." />
+		<String Key="ENUM_BATTLEMESSAGEENUMTEXT_ENDTURN" Value="回合结束." />
+		<String Key="ENUM_ENUMPROMPTCONTENT_SAVELANGUAGESETTING" Value="语言设置改变,要重启游戏才能应用设置,是否需要重启？" />
+		<String Key="ENUM_ENUMPROMPTCONTENT_SAVESETTINGS" Value="是否想要保存游戏设置？" />
+		<String Key="ENUM_LOGINPROMPT_USERNAMELENGHTLIMIT" Value="用户名的长度必须等于12." />
+		<String Key="ENUM_LOGINPROMPT_PLEASEENTERPASSWORD" Value="请输入用户名或密码" />
+		<String Key="ENUM_LOGINPROMPT_CONFIRMPASSWORDERRORED" Value="两次输入的密码不相同" />
+		<String Key="ENUM_LOGINPROMPT_WRONGPASSWORD" Value="密码错误." />
+		<String Key="ENUM_LOGINPROMPT_REGISTERFAIL" Value="注册失败.当前用户名已经被占用." />
+		<String Key="ENUM_LOGINPROMPT_REGISTERSUCCESS" Value="注册成功,请进行登录." />
+		<String Key="ENUM_PLAYERROOMSTATUS_NOTREADY" Value="未准备" />
+		<String Key="ENUM_PLAYERROOMSTATUS_READY" Value="准备中" />
+		<String Key="ENUM_ROOMREADYBTNSTATUS_READY" Value="准备" />
+		<String Key="ENUM_ROOMREADYBTNSTATUS_CANCEL" Value="取消准备" />
+	</Dictionary>
+</Dictionaries>

@@ -1,0 +1,94 @@
+syntax = "proto3";
+package GameMessage;
+
+enum PlayerStatus
+{
+	PlayerStaus_None = 0;
+	Idle = 1;
+	Gaming = 2;
+	Matching = 3;
+	Watting = 4;
+}
+
+enum FriendHandleResult
+{
+	None = 0;
+	Success = 1;
+	Failure = 2;
+	RepeatAddingFriends = 3;
+}
+
+enum FriendRequestState
+{
+	Await = 0;
+	Agreen = 1;
+	Refuse = 2;
+}
+
+message PlayerMessage
+{
+  string username = 1;
+  string nickName = 2;
+  string description = 3;
+  int32 bodyId = 4;
+  int32 hairId = 5;
+  int32 kitId = 6;
+  int32 faceId = 7;
+  bool isLogin = 8;
+  PlayerStatus status = 9;
+}
+
+
+message CSGetFriendRequestList
+{
+	string userName = 1;
+}
+
+message SCFriendRequestList
+{
+	repeated PlayerMessage requestFriendList = 1;
+	FriendHandleResult result = 2;//防止好友列表为空的时候不发送确认包
+}
+
+message CSRequestFriend 
+{
+  string ownUsername = 1;
+  string targetUsername = 2;
+}
+
+message SCRequestFriend
+{
+	string targetUserName = 1;
+	FriendHandleResult result = 2;
+}
+
+message CSGetFriendList
+{
+  string username = 1;
+}
+
+message SCFriendList
+{
+  repeated PlayerMessage friendMessages = 1;
+  FriendHandleResult result = 2;//防止好友列表为空的时候不发送确认包
+}
+
+//实时更新玩家的信息..
+message SCUpdateFriendState
+{
+	string username = 1;
+	PlayerStatus status = 2;
+}
+
+message CSProcessingFriendRequest
+{
+	string ownUsername = 1;
+	string requesterUserName = 2;
+	FriendRequestState requestState = 3;
+}
+
+message SCProcessingFriendRequest
+{
+	string requesterUserName = 1;
+	FriendHandleResult result = 2;
+}

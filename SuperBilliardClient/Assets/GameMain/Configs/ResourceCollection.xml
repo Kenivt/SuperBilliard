@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="ConfigBundle" LoadType="0" Packed="True" />
+      <Resource Name="DataTableBundle" LoadType="0" Packed="True" />
+      <Resource Name="EntitiesBundle" LoadType="0" Packed="True" />
+      <Resource Name="LightMap" LoadType="0" Packed="True" />
+      <Resource Name="LocalizationBundle" LoadType="0" Packed="True" />
+      <Resource Name="MaterialBundle" LoadType="0" Packed="True" />
+      <Resource Name="SceneBundle" LoadType="0" Packed="True" />
+      <Resource Name="SoundBundle" LoadType="0" Packed="True" />
+      <Resource Name="SpriteAtllasBundle" LoadType="0" Packed="True" />
+      <Resource Name="TextureBundle" LoadType="0" Packed="True" />
+      <Resource Name="UIFormBundle" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="007ae2114328a754a918f1a02a901b64" ResourceName="DataTableBundle" />
+      <Asset Guid="00c7a643d3513cb43a4fdf41c9dcfbae" ResourceName="UIFormBundle" />
+      <Asset Guid="051e5b37d05fdf447b507a36b9d46184" ResourceName="TextureBundle" />
+      <Asset Guid="07125d84e0180bb41be45b915a9b458e" ResourceName="LocalizationBundle" />
+      <Asset Guid="0889ec2c6c3440040a38433ec17d2d32" ResourceName="TextureBundle" />
+      <Asset Guid="0c6c19c954af6584e89dc7db0a94fced" ResourceName="SceneBundle" />
+      <Asset Guid="0e38dda3a134f1e499a4afae48e8478e" ResourceName="DataTableBundle" />
+      <Asset Guid="0ff5739df8028a849adb8e52561db52d" ResourceName="DataTableBundle" />
+      <Asset Guid="104645244d22f094fa356d2faa7b0bd1" ResourceName="MaterialBundle" />
+      <Asset Guid="1097a81d000a2ef4c885d3f00c9c11c7" ResourceName="DataTableBundle" />
+      <Asset Guid="110d283f5985bbe41ba1e2e22041a8c9" ResourceName="ConfigBundle" />
+      <Asset Guid="12a509e78ac3ea3488cd5a05a53fb7e6" ResourceName="MaterialBundle" />
+      <Asset Guid="13ff31df56b8b1745bb663dcb361accd" ResourceName="MaterialBundle" />
+      <Asset Guid="16d5a24e48095884d9ddea9432a34a83" ResourceName="LightMap" />
+      <Asset Guid="25d396ab6928b8e4594b9c099d48eccb" ResourceName="UIFormBundle" />
+      <Asset Guid="27f346707ee4e3346b8f9d0b52e734b6" ResourceName="UIFormBundle" />
+      <Asset Guid="2a60daf970ffff24883c044e09b8d614" ResourceName="TextureBundle" />
+      <Asset Guid="2c59fcfee951c0b4381377bb2c2c4640" ResourceName="MaterialBundle" />
+      <Asset Guid="326e14c7d96ba284d9dea62f012a3c7d" ResourceName="SoundBundle" />
+      <Asset Guid="32f6e8cce36be524395e9b3ea787a259" ResourceName="MaterialBundle" />
+      <Asset Guid="33d2eac0598415a48a0e72de29551ea4" ResourceName="SceneBundle" />
+      <Asset Guid="33fe4848d99704f41bfbfb59f1b86e61" ResourceName="SoundBundle" />
+      <Asset Guid="360d039642aa05143bdf1fb653e56f57" ResourceName="SceneBundle" />
+      <Asset Guid="3817a70235c49ac47b78e8c21a326685" ResourceName="MaterialBundle" />
+      <Asset Guid="3905301154b7af844a0a8a519e97b10d" ResourceName="DataTableBundle" />
+      <Asset Guid="3c37b54245933ab4bbd8930e000b89fa" ResourceName="MaterialBundle" />
+      <Asset Guid="3d45b65b88efd6647b91fbc7e90d1d1c" ResourceName="DataTableBundle" />
+      <Asset Guid="3da0346507057cf48bcc696c3fa27a62" ResourceName="MaterialBundle" />
+      <Asset Guid="406455d31a77f494cbb3bc72464931bf" ResourceName="DataTableBundle" />
+      <Asset Guid="43e2d581f118bb445a864d8f0e2f2635" ResourceName="UIFormBundle" />
+      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" ResourceName="ConfigBundle" />
+      <Asset Guid="4747c1d9f6cb6d64a90cfab20b0e652b" ResourceName="DataTableBundle" />
+      <Asset Guid="4f73e2e054089f6499c8526552536178" ResourceName="LocalizationBundle" />
+      <Asset Guid="5319fd87b5762f94b8c2f14026edeccf" ResourceName="DataTableBundle" />
+      <Asset Guid="53b4468b108fbbb4694f5978199d19dc" ResourceName="TextureBundle" />
+      <Asset Guid="53ffec4706a24a14ca01d871449f226e" ResourceName="DataTableBundle" />
+      <Asset Guid="5a4ade52b3de98c4fa54346df0ef4bce" ResourceName="DataTableBundle" />
+      <Asset Guid="5aaedbaf19b49504188fa736c1f02313" ResourceName="SoundBundle" />
+      <Asset Guid="5b9eab9c7d244474989829165edfe900" ResourceName="MaterialBundle" />
+      <Asset Guid="632281e55486edb45975927edb0182e5" ResourceName="TextureBundle" />
+      <Asset Guid="665b59177cd31db46afa210cad60ea9d" ResourceName="LightMap" />
+      <Asset Guid="6d9dcded9a4263e4988768a35f0d344a" ResourceName="LightMap" />
+      <Asset Guid="6f72c63fb30a3bc4782d919c52ce1b64" ResourceName="TextureBundle" />
+      <Asset Guid="6fcf9428bb2ffb343a474a2f8cb53b38" ResourceName="TextureBundle" />
+      <Asset Guid="7259b2d59143b4b4f9baaade70b0a2ab" ResourceName="LightMap" />
+      <Asset Guid="729bf762662dd3f4093d3c2949902842" ResourceName="MaterialBundle" />
+      <Asset Guid="748888b849b77634388a264436cdcac7" ResourceName="MaterialBundle" />
+      <Asset Guid="7d9a7f4d3b13ca94b80eaf603b9d1cf8" ResourceName="MaterialBundle" />
+      <Asset Guid="7dd6d5156df43cd40ad21f88197625c6" ResourceName="LightMap" />
+      <Asset Guid="7e019a785cdd4c24c8b68c7a63de372f" ResourceName="TextureBundle" />
+      <Asset Guid="7f72ce56d77df4648a022205114073c9" ResourceName="TextureBundle" />
+      <Asset Guid="7fd11dc5d29076d469d414dec2818f11" ResourceName="ConfigBundle" />
+      <Asset Guid="80a3844b460c7414e81f5dcc649cd103" ResourceName="TextureBundle" />
+      <Asset Guid="881ffdeb16566b946879bdc3515a84f6" ResourceName="LightMap" />
+      <Asset Guid="8acebc4b66a2b7c4b87d0775a9f6e752" ResourceName="UIFormBundle" />
+      <Asset Guid="8c2571aa7594d6e4a918dbaa88f5e062" ResourceName="MaterialBundle" />
+      <Asset Guid="8cc2b025ccda83346ad105b7ef456779" ResourceName="MaterialBundle" />
+      <Asset Guid="8d74b6daa3bc53c45ac1447c2e5cb0d4" ResourceName="DataTableBundle" />
+      <Asset Guid="8d98c643b8f02fe4b997141bb7adbddc" ResourceName="TextureBundle" />
+      <Asset Guid="8e5e61c30c10c0044a6d7d0fa8a24f46" ResourceName="SoundBundle" />
+      <Asset Guid="90fc71e334f47874c9ff3b4faf5f34ef" ResourceName="TextureBundle" />
+      <Asset Guid="914dec1b1cb910544995a877c542f5e5" ResourceName="LocalizationBundle" />
+      <Asset Guid="923e8509499522244a108aeb98e57f79" ResourceName="MaterialBundle" />
+      <Asset Guid="92e70b10e70a7ad4db456354affa84ce" ResourceName="UIFormBundle" />
+      <Asset Guid="9405f5ef20c79ee48b793285ff612f53" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="9470428908276b44f845be306ad5c602" ResourceName="EntitiesBundle" />
+      <Asset Guid="9799af58cf839a64c9d7512c31c56213" ResourceName="MaterialBundle" />
+      <Asset Guid="97a36fe0242d31d4397e8b272635ebfb" ResourceName="MaterialBundle" />
+      <Asset Guid="99be82db751e0bd439bdff4b4993e929" ResourceName="DataTableBundle" />
+      <Asset Guid="9b41aaeb92797c64aa537409de686684" ResourceName="UIFormBundle" />
+      <Asset Guid="9c699590aa75ee144906a17473a49099" ResourceName="MaterialBundle" />
+      <Asset Guid="9c99a3f720a98394895e22c76a9ae12c" ResourceName="DataTableBundle" />
+      <Asset Guid="9d87bdf30f0c0174a914b5f3aaeec328" ResourceName="MaterialBundle" />
+      <Asset Guid="9f55ada8529d8b54495c754f3aec396b" ResourceName="DataTableBundle" />
+      <Asset Guid="a1d0ed1f522c3e24e926fb9491237fb7" ResourceName="TextureBundle" />
+      <Asset Guid="a260a30e2f2556e4fb72a36cde4408d1" ResourceName="MaterialBundle" />
+      <Asset Guid="a342ca42b78d5bc49911f90c03228ca2" ResourceName="MaterialBundle" />
+      <Asset Guid="a38e2da0b0e97e8459c8fb03f15b449b" ResourceName="DataTableBundle" />
+      <Asset Guid="a3cebb376ea75714daa6b9bb6b17cc1d" ResourceName="DataTableBundle" />
+      <Asset Guid="a4fa1dc0bb76eb14da785038aa4418d9" ResourceName="ConfigBundle" />
+      <Asset Guid="a75029367469217478281ad4270e4aca" ResourceName="TextureBundle" />
+      <Asset Guid="a76a7cfa0b5f0194b959528b5fd43644" ResourceName="UIFormBundle" />
+      <Asset Guid="a797da27788fa634dbce7a68613d639c" ResourceName="DataTableBundle" />
+      <Asset Guid="a82b3c246c535c143849756fcf4cacc2" ResourceName="MaterialBundle" />
+      <Asset Guid="a8886b7803ffe3344a80223714df0db9" ResourceName="UIFormBundle" />
+      <Asset Guid="aabc60442df1e574bb265c828267a8be" ResourceName="TextureBundle" />
+      <Asset Guid="aafd7905463327544b042c2239985691" ResourceName="DataTableBundle" />
+      <Asset Guid="aeb26a90638a79c44a5eee432cba0db3" ResourceName="UIFormBundle" />
+      <Asset Guid="b018ea8a9ee19f6429a7441e8d334baa" ResourceName="TextureBundle" />
+      <Asset Guid="b1b8b6a1924f0e541958f5f3c0f8aca5" ResourceName="MaterialBundle" />
+      <Asset Guid="b44bfac45a6cb7f448eb320ecc030a9c" ResourceName="ConfigBundle" />
+      <Asset Guid="b611760a65d81cc4fa504a91183b931e" ResourceName="LightMap" />
+      <Asset Guid="bb3b3008af51c56448783fdd2c3045bd" ResourceName="MaterialBundle" />
+      <Asset Guid="bc0ce92b15b5463499932677f13b69a3" ResourceName="SceneBundle" />
+      <Asset Guid="bc35b939442593640820417134a852b1" ResourceName="SoundBundle" />
+      <Asset Guid="bc7affee9471e7243b090f1039228df4" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="bcbd18ead3b00e040a84fefde7ccf8a0" ResourceName="EntitiesBundle" />
+      <Asset Guid="bd20373a8f372bb4394772d4caa6d28b" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="bf1d67dfbf7392a49bfa102244f81c37" ResourceName="TextureBundle" />
+      <Asset Guid="c06d3db2fb3b5a94188aa94cc292d666" ResourceName="UIFormBundle" />
+      <Asset Guid="c1f10f98cbdb9b242bd15c5d018df0b3" ResourceName="LightMap" />
+      <Asset Guid="c24369514e9a13542a953eea0b4cd197" ResourceName="MaterialBundle" />
+      <Asset Guid="c45b003771be722498854b1b83030b02" ResourceName="MaterialBundle" />
+      <Asset Guid="ca583fb8c7c76ae479426d5327cfb1fd" ResourceName="DataTableBundle" />
+      <Asset Guid="cd2042e16ebc2824e835f07c4ce3b2ff" ResourceName="DataTableBundle" />
+      <Asset Guid="d0e5e4a2e456d0e4ba6c9796d56b1ecc" ResourceName="DataTableBundle" />
+      <Asset Guid="d17197c6a0d639f44891ad025a577dd3" ResourceName="LightMap" />
+      <Asset Guid="d6c44e0ea7315004ead53ea1eb6c9ba7" ResourceName="MaterialBundle" />
+      <Asset Guid="d72f9e1d5695f1744a8dc1c690d18e69" ResourceName="UIFormBundle" />
+      <Asset Guid="d7fa2b8fb316d9046bef8dd2da19af3d" ResourceName="LightMap" />
+      <Asset Guid="d9d46c8759c243e44994cfffaeb040c4" ResourceName="MaterialBundle" />
+      <Asset Guid="da8a4cacc02f1c541b4b7538e3163d91" ResourceName="UIFormBundle" />
+      <Asset Guid="dbf36baa11a9ef142bf4a8ae9685fa8a" ResourceName="DataTableBundle" />
+      <Asset Guid="dca98b472d7069e44b653f6a00e9c643" ResourceName="TextureBundle" />
+      <Asset Guid="de4a7e3b0c8542a4b906ced05c31c7c3" ResourceName="SoundBundle" />
+      <Asset Guid="dfc6ced474b50af42bb3e05e2428b098" ResourceName="DataTableBundle" />
+      <Asset Guid="e4e344c0eb86e2a4e943609b415db00a" ResourceName="MaterialBundle" />
+      <Asset Guid="e7273d892763b7c47830711928ab4707" ResourceName="MaterialBundle" />
+      <Asset Guid="e7bf44a0f1495a4438ca44a8b2ad6e59" ResourceName="DataTableBundle" />
+      <Asset Guid="e867eac4aa8b74141b7009f128ad48e2" ResourceName="DataTableBundle" />
+      <Asset Guid="e93754c36afe01a40bde6abcbe5a63c7" ResourceName="UIFormBundle" />
+      <Asset Guid="eca43959aa680174e956b7eca7150437" ResourceName="UIFormBundle" />
+      <Asset Guid="ed9eef2845f74534da3b893686549fdc" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="ee153d139a9a64f48967897b5726e5ca" ResourceName="MaterialBundle" />
+      <Asset Guid="ef1733a374030b64282f7513620bb461" ResourceName="DataTableBundle" />
+      <Asset Guid="ef6f87d41c24d2a4ba19139e4eb3982d" ResourceName="LightMap" />
+      <Asset Guid="efec8db3e5bc1614894628086487be41" ResourceName="UIFormBundle" />
+      <Asset Guid="f1b3bf720aada44478bf30b1bddbecff" ResourceName="TextureBundle" />
+      <Asset Guid="f2b3400ab44a4284abeb584d1d236338" ResourceName="SoundBundle" />
+      <Asset Guid="f36f01ec285a25f4e9a686712b95bb51" ResourceName="DataTableBundle" />
+      <Asset Guid="f5092243e10f3564f8c92d0bd204d10b" ResourceName="EntitiesBundle" />
+      <Asset Guid="f6da7a758f972dc4da512f11ec69a2ca" ResourceName="UIFormBundle" />
+      <Asset Guid="f71794747abefb6478ae77b1e2c81254" ResourceName="UIFormBundle" />
+      <Asset Guid="f74e79e2ba22b264fa5adf06f51044b3" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="f9b0f1c7dc8bdc44fa2beab1a14b1dc4" ResourceName="MaterialBundle" />
+      <Asset Guid="fd65750ee2c7e254d8ec7b87c2f2ab80" ResourceName="SpriteAtllasBundle" />
+      <Asset Guid="fe03ca8d736ecef4e8b1cc52880d23a3" ResourceName="SceneBundle" />
+      <Asset Guid="ffd026160413c1f469d3494b11f9f15e" ResourceName="TextureBundle" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

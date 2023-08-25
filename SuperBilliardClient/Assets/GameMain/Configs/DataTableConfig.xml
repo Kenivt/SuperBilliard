@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <DataTable Name="AssetPath" FullName="Assets/GameMain/DataTables/AssetPath.txt" />
+  <DataTable Name="Battle" FullName="Assets/GameMain/DataTables/Battle.txt" />
+  <DataTable Name="Billiard" FullName="Assets/GameMain/DataTables/Billiard.txt" />
+  <DataTable Name="Entity" FullName="Assets/GameMain/DataTables/Entity.txt" />
+  <DataTable Name="EntityGroup" FullName="Assets/GameMain/DataTables/EntityGroup.txt" />
+  <DataTable Name="PlayerImage" FullName="Assets/GameMain/DataTables/PlayerImage.txt" />
+  <DataTable Name="PoolParam" FullName="Assets/GameMain/DataTables/PoolParam.txt" />
+  <DataTable Name="Scene" FullName="Assets/GameMain/DataTables/Scene.txt" />
+  <DataTable Name="Sound" FullName="Assets/GameMain/DataTables/Sound.txt" />
+  <DataTable Name="SoundGroup" FullName="Assets/GameMain/DataTables/SoundGroup.txt" />
+  <DataTable Name="SoundPlayParam" FullName="Assets/GameMain/DataTables/SoundPlayParam.txt" />
+  <DataTable Name="SpriteAtlas" FullName="Assets/GameMain/DataTables/SpriteAtlas.txt" />
+  <DataTable Name="UIForm" FullName="Assets/GameMain/DataTables/UIForm.txt" />
+  <DataTable Name="UIGroup" FullName="Assets/GameMain/DataTables/UIGroup.txt" />
+</Root>

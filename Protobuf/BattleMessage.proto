@@ -1,0 +1,156 @@
+syntax = "proto3";
+package GameMessage;
+
+//同步台球和棒球的位置信息
+message Vector3Mess
+{
+	float x=1;
+	float y=2;
+	float z=3;
+}
+
+message BallMessage
+{
+	int32 ballId=1;
+	Vector3Mess position=2;
+	Vector3Mess rotation=3; 
+}
+
+message CSCueSync
+{
+	Vector3Mess position=1;
+	float angltY=2;
+}
+
+message SCCueSync
+{
+	Vector3Mess position=1;
+	float angltY=2;
+}
+
+
+message CSBilliardSync
+{
+	repeated BallMessage ballMessages=1;
+}
+
+message SCBilliardSync
+{
+	repeated BallMessage ballMessages=1;
+}
+
+//回合分析,即所有球停止滚动后通知玩家进行回合分析
+message CSTurnAnalysis
+{
+	int32 fristCollideBIlliardId = 1;
+}
+message SCTurnAnalysis
+{
+	int32 fristCollideBIlliardId = 1;
+}
+
+//设置台球的状态,比如显示隐藏的状态,需要进行网络同步
+message CSSetBilliardState
+{
+	int32 billiardId=1;
+	bool active=2;
+	bool physicsIsOpen=3;
+}
+
+message SCSetBilliardState
+{
+	int32 billiardId=1;
+	bool active=2;
+	bool physicsIsOpen=3;
+}
+
+//退出房间
+message CSExitGameRoom
+{
+	
+}
+
+
+//Sound
+message CSSyncSound
+{
+	int32 soundId = 1;
+	float volumn = 2;
+	Vector3Mess position = 3;
+}
+message SCSyncSound
+{
+	int32 soundId = 1;
+	float volumn = 2;
+	Vector3Mess position = 3;
+}
+
+//在做同步时经常会写一些空消息包,当时觉得麻烦所
+//以想写一个统一的空消息事件类来减少空消息包的创建
+//但之后没有再用过,此类主要同来发送暂停计数的消息
+
+enum BattleEmptyEvent
+{
+	BattleNone=0;
+	StopTimeCount=1;
+}
+
+message CSBattleEmptyEvent
+{
+	BattleEmptyEvent battleEvent = 1;
+}
+
+message SCBattleEmptyEvent
+{
+	BattleEmptyEvent battleEvent = 1;
+}
+
+//回合的开始与结束消息包,花式台球的多余的同步消息
+message CSEndTurn
+{
+	bool isfoul = 1;
+}
+
+message SCStartTurn
+{
+	bool is_placewhite=1;
+}
+
+
+//花式台球球类型的判定
+//花式台球做了很多无用的同步
+//球色类型的消息包就是其中之一
+enum BilliardType
+{
+	None=0;
+	Single=1;
+	Double=2;
+}
+
+
+message SCBilliardTypeConfirm
+{
+	BilliardType scBilliardType=1;
+}
+
+message CSBilliardTypeConfirm
+{
+	BilliardType csBilliardType=1;
+}
+
+//无用
+message SCCueStorageSync
+{
+	float fillAmount=1;
+	float dir_x=2;
+	float dir_y=3;
+	float dir_z=4;
+}
+
+message CSCueStorageSync
+{
+	float fillAmount=1;
+	float dir_x=2;
+	float dir_y=3;
+	float dir_z=4;
+}

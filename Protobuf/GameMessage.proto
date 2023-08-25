@@ -1,0 +1,79 @@
+syntax = "proto3";
+package GameMessage;
+
+enum GameType
+{
+    GameType_None = 0;
+    FancyMatch = 1;
+    FancyFriend = 2;
+    SnookerMatch = 3;
+    SnookerFriend = 4;
+}
+
+enum GameResult
+{
+	GameResult_None=0;
+	Victory=1;
+	Defeat=2;
+}
+
+//加入游戏
+message CSJoinGame
+{
+	string userName=1;
+	GameType gameType=2;
+	//请用'|'来进行分隔
+	//string kcpIpEnd=3;
+}
+
+message CSStopMatch
+{
+	string userName=1;
+}
+
+//--------------新加入的
+//开启KCP
+message CSOpenKcp
+{
+	string kcpIpEnd=1;
+}
+message SCOpenKcp
+{
+	string kcpIpEnd=1;
+}
+
+//游戏加载
+
+message SCStartLoadGame
+{
+	string opponentName=1;
+	GameType gameType=2;
+	bool isFirstMove=3;
+	int32 randomSeed = 4;
+}
+
+
+message CSLoadGameComplete
+{
+	
+}
+message SCGameStart
+{
+}
+//-----------
+
+message CSGameResultPack
+{
+	GameResult result=1;
+}
+message SCGameResultPack
+{
+	GameResult result=1;
+}
+
+
+//其他包体
+//message SCGameStartPack
+//{
+//}
+

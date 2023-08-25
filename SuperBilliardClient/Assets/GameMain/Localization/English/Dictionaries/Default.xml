@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionaries Language="English">
+  <Dictionary>
+    <String Key="FRIENDINVITATION_TITLE" Value="INVACATION" />
+    <String Key="FRIENDINVITATION_ACCEPT" Value="ACCEPT" />
+    <String Key="FRIENDINVITATION_REFUSE" Value="REFUSE" />
+    <String Key="FRIENDLIST_FRIENDBTN" Value="FRIEND" />
+    <String Key="FRIENDLIST_ADDFRIEND" Value="REUEST" />
+    <String Key="FRIENDLIST_FRIEND_REQUESTLISTBTN" Value="RquestList" />
+    <String Key="FRIENDLIST_SEARCH_PROMPT" Value="Enter the target player account..." />
+    <String Key="FRIENDREQUEST_TITLE" Value="FRIEND REQUEST" />
+    <String Key="GAMEMODE_MATCH_FANCYBILLIARD" Value="FANCY" />
+    <String Key="GAMEMODE_MARTH_SNOKKER" Value="SNOKKER" />
+    <String Key="GAMEMODE_MATCH_CUSTOM" Value="CUSTOM" />
+    <String Key="GAMEMODE_FRIEND_FANCYBILLIARD" Value="FANCY" />
+    <String Key="GAMEMODE_FRIEND_SNOKKER" Value="SNOKKER" />
+    <String Key="REMATCH" Value="REMARCH" />
+    <String Key="BACKMAINMENU" Value="BACK" />
+    <String Key="SETTING_SOUNDBTN" Value="SOUND" />
+    <String Key="SETTING_GRAPHICBTN" Value="GRAPHIC" />
+    <String Key="SETTING_OTHERBTN" Value="OTHER" />
+    <String Key="SETTING_UI" Value="UI" />
+    <String Key="SETTING_SFX" Value="SFX" />
+    <String Key="SETTING_MUSIC" Value="MUSIC" />
+    <String Key="SETTING_FULLSCREEN" Value="FULLSCREEN" />
+    <String Key="SETTING_RESOLUTION" Value="RESOLUTION" />
+    <String Key="SETTING_FRAMERATE" Value="FRAMERATE" />
+    <String Key="SETTING_LANGUAGE" Value="LANGUAGE" />
+    <String Key="SETTING_QUIT" Value="QUIT" />
+    <String Key="LOGIN_TITLE" Value="LOGIN" />
+    <String Key="LOGIN_USERWORD" Value="USER" />
+    <String Key="LOGIN_PASSWORD" Value="PASS" />
+    <String Key="LOGINBTN" Value="LOGIN" />
+    <String Key="LOGIN_SWITCHRIGISTERBTN" Value="RIGISTER" />
+    <String Key="RIGISTER_TITLE" Value="RIGISTER" />
+    <String Key="RIGISTER_USERNAME" Value="USER" />
+    <String Key="RIGISTER_PASSWORD" Value="PASS" />
+    <String Key="RIGISTER_CONFIRM" Value="CONFIRM" />
+    <String Key="RIGISTER_SWITCHLOGIN" Value="LOGIN" />
+    <String Key="RIGISTERBTN" Value="RIGISTER" />
+    <String Key="MAINMENU_LEVEL" Value="LEVEL:" />
+    <String Key="PLAYERIMAGE_SAVEMESSAGE" Value="SAVE" />
+    <String Key="PLAYERIMAGE_HAIR" Value="HAIR" />
+    <String Key="PLAYERIMAGE_FACE" Value="FACE" />
+    <String Key="PLAYERIMAGE_BODY" Value="BODY" />
+    <String Key="PLAYERIMAGE_KIT" Value="KIT" />
+    <String Key="PLAYERIMAGE_TITLE" Value="CUSTOM" />
+    <String Key="PROMPT_TITLE" Value="PROMPT" />
+    <String Key="PROMPT_CONFIRMBTN" Value="CONFRIM" />
+    <String Key="PROMPT_CANCELBTN" Value="CANCEL" />
+    <String Key="ENUM_PLAYERSTATUS_PLAYERSTAUSNONE" Value="OFFLINE" />
+    <String Key="ENUM_PLAYERSTATUS_IDLE" Value="IDLE" />
+    <String Key="ENUM_PLAYERSTATUS_GAMING" Value="GAMING" />
+    <String Key="ENUM_PLAYERSTATUS_MATCHING" Value="MATCHING" />
+    <String Key="ENUM_PLAYERSTATUS_WATTING" Value="WATTING" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_FOUL" Value="FOUL!! TURN END" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_SCORE" Value="SCORE! TURN RESTART" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_GAMETIED" Value="GAME TIED!! THE WINNING BALL IS PLACED!!" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_VICTORY" Value="VICTORY" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_DEFEATED" Value="DEFEATED" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_TIMEOUT" Value="TIME OUT! TURN END" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_PLACEWHITEBALL" Value="TURN START.PLEASE PLACE WHITE." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITEENTERHOLE" Value="FOUL.WHITE ENTER HOLE!" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_EIGHTENTERHOLE" Value="FOUL.EIGHT ENTER HOLE,GAME OVER!!" />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_FRISTCOLLIDEFOUL" Value="FRIST COLLIDE FOUL.TURN END." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITECOLLIDEEDGE" Value="WHITE COLLIDE EDGE.TURN END." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_WHITENOCOLLDE" Value="THE WHITE BALL DID'T TOUCH ANYTHINE." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_FOULCOUNTFORMAT" Value="{0} FOULS .IF MORE THAN {1} WILL END THE GAME." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_CONFIRMBILLIARDTYPE" Value="CONFIRM BILLIARD TYPE." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_STARTTURN" Value="START TURN." />
+    <String Key="ENUM_BATTLEMESSAGEENUMTEXT_ENDTURN" Value="END TURN." />
+    <String Key="ENUM_ENUMPROMPTCONTENT_SAVELANGUAGESETTING" Value="The language configuration is saved successfully. If you need to restart the game for application Settings, do you want to restart it?" />
+    <String Key="ENUM_ENUMPROMPTCONTENT_SAVESETTINGS" Value="Do you want to save the game Settings?" />
+    <String Key="ENUM_LOGINPROMPT_USERNAMELENGHTLIMIT" Value="The length of the user name must be 12." />
+    <String Key="ENUM_LOGINPROMPT_PLEASEENTERPASSWORD" Value="Please enter your username." />
+    <String Key="ENUM_LOGINPROMPT_CONFIRMPASSWORDERRORED" Value="The two passwords are different." />
+    <String Key="ENUM_LOGINPROMPT_WRONGPASSWORD" Value="Wrong password." />
+    <String Key="ENUM_LOGINPROMPT_REGISTERFAIL" Value="Fail to sign in.The current user name has been occupied." />
+    <String Key="ENUM_LOGINPROMPT_REGISTERSUCCESS" Value="Registration successful, please login again." />
+    <String Key="ENUM_PLAYERROOMSTATUS_NOTREADY" Value="NOTREADY" />
+    <String Key="ENUM_PLAYERROOMSTATUS_READY" Value="READY" />
+    <String Key="ENUM_ROOMREADYBTNSTATUS_READY" Value="READY" />
+    <String Key="ENUM_ROOMREADYBTNSTATUS_CANCEL" Value="CANCEL" />
+  </Dictionary>
+</Dictionaries>

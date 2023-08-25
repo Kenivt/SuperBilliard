@@ -1,0 +1,10 @@
+#	Sprite			
+#	Id		Name	AssetPathId
+#	int		string	int
+#	id号	策划备注	对应的Atlas名称	路径Id
+	1001		BilliardAtlas	31001
+	1002		BodyAtlas	31002
+	1003		FaceAtlas	31003
+	1004		HairAtlas	31004
+	1005		KitAtlas	31005
+	1006		SnokkerAtlas	31006

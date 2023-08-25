@@ -1,0 +1,23 @@
+﻿using GameFramework;
+using GameFramework.Event;
+namespace SuperBilliard
+{
+    public class #SCRIPTNAME#: GameEventArgs
+    {
+        #ROOTNAMESPACEBEGIN#
+        public static int EventId => typeof(#SCRIPTNAME#).GetHashCode();
+
+        public override int Id => EventId;
+
+        public override void Clear()
+        {
+
+        }
+        public static #SCRIPTNAME# Create()
+        {
+            #SCRIPTNAME# testEvent = ReferencePool.Acquire<#SCRIPTNAME#>();
+            return testEvent;
+        }
+    #ROOTNAMESPACEEND#
+    }
+}
