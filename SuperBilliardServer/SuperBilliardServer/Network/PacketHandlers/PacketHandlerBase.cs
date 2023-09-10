@@ -23,7 +23,6 @@ namespace SuperBilliardServer.Network.PacketHandlers
         }
     }
 
-
     public abstract class PacketHandlerBase : IPacketHandler
     {
         public abstract int Id

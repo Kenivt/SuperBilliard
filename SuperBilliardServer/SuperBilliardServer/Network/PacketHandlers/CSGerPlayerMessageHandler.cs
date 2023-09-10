@@ -27,7 +27,6 @@ namespace SuperBilliardServer.Network.PacketHandlers
 
             if (flag)
             {
-
                 client.SendPacket(sCPlayerMessage);
             }
             ReferencePool.Release(sCPlayerMessage);

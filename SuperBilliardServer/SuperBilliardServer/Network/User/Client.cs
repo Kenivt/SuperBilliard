@@ -59,24 +59,28 @@ namespace SuperBilliardServer.Network.User
         public bool SerilizePacketToMessages(Packet packet)
         {
             bool flag = false;
-
-            //防止消息过大,消息超出容量则先发送消息
-            IMessage message = (IMessage)packet;
-            int size = message.CalculateSize();
-            if (_message.SendRemainSize < size)
+            lock (_message)
             {
-                //先发送消息
-                Send();
+                //防止消息过大,消息超出容量则先发送消息
+                IMessage message = (IMessage)packet;
+                int size = message.CalculateSize();
+                if (_message.SendRemainSize < size)
+                {
+                    //先发送消息
+                    Send();
+                }
+
+                flag = _message.SerilizePacket(packet);
             }
-
-            flag = _message.SerilizePacket(packet);
-
             return flag;
         }
 
         public void Send()
         {
-            _message.SendMessage(_socket);
+            lock (_message)
+            {
+                _message.SendMessage(_socket);
+            }
         }
 
         public void SendPacket(params Packet[] packet)
