@@ -63,7 +63,6 @@ namespace UnityGameFramework.Editor
                     DataItem dataItem = new DataItem() { enable = false, dataTypeName = dataTypeName };
                     dataItems.Add(dataItem);
                 }
-
             }
         }
 

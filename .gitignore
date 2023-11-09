@@ -1,4 +1,9 @@
 SuperBilliardClient/Library/
 SuperBilliardClient/.vs/
 SuperBilliardClient/Assets/StreamingAssets/
-SuperBilliardClient/SuperBilliardClient/Temp/
+SuperBilliardClient/Temp/
+SuperBilliardClient/Logs/
+SuperBilliardClient/obj/
+/.vs
+*.csproj
+

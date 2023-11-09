@@ -45,6 +45,7 @@ namespace SuperBilliard
             bool flag = Polygon.OverlapPoint(worldPoint);
             return flag;
         }
+
 #if UNITY_EDITOR
         protected override void Reset()
         {
