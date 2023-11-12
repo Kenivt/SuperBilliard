@@ -46,6 +46,7 @@ namespace SuperBilliardServer.Sql
                 Log.Error("username is null or empty on {0}.", this.GetType().ToString());
                 return false;
             }
+
             SqlConnectionController connectionController = SqlManager.Instance.GetConnection();
 
             SqlConnection connection = connectionController.Connection;
@@ -54,7 +55,7 @@ namespace SuperBilliardServer.Sql
             {
                 command.Parameters.AddWithValue("@userName", username);
 
-                SqlDataReader reader = await command.ExecuteReaderAsync();
+                SqlDataReader reader = await command.ExecuteReaderAsync().ConfigureAwait(true);
                 bool flag = false;
                 if (reader.Read())
                 {

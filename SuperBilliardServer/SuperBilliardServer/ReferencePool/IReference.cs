@@ -5,6 +5,8 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+//用引用池用魔怔了，连服务器都大量使用了...
+
 namespace GameFramework
 {
     /// <summary>

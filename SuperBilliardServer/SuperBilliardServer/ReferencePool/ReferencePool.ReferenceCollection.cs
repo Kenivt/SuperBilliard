@@ -10,7 +10,6 @@ using System.Collections.Generic;
 
 namespace GameFramework
 {
-
     /// <summary>
     /// 自定义的比较类,严格限制为比较引用,原因是protobuf的Equals方法会比较值,导致获取对象异常
     /// </summary>
@@ -20,12 +19,16 @@ namespace GameFramework
         {
             return ReferenceEquals(x, y);
         }
+
+        //这个GetHashCode可能会有异常操作...
+        //TODO:将要修改的地方，最好依据ID来分配Hash
         public int GetHashCode(IReference obj)
         {
             if (obj == null)
             {
                 return 0;
             }
+
             return obj.GetHashCode();
         }
     }

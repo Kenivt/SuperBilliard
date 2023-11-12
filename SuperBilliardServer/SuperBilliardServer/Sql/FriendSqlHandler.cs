@@ -21,8 +21,8 @@ namespace SuperBilliardServer.Sql
     {
         public async Task<SqlResult> GetFriendList(string userName, SCFriendList packet)
         {
-            const string getFriendListSql = "SELECT username,nickName,description,bodyId,faceId,hairId,kitId,isLogin FROM vPlayerMessageAndLoginState INNER JOIN FriendList " +
-                                            "ON (FriendList.p_user1 = @userName AND FriendList.p_user2 = username) OR (FriendList.p_user2 = @userName AND FriendList.p_user1 = username)";
+            const string getFriendListSql = @"SELECT username,nickName,description,bodyId,faceId,hairId,kitId,isLogin FROM vPlayerMessageAndLoginState INNER JOIN FriendList 
+                                            ON (FriendList.p_user1 = @userName AND FriendList.p_user2 = username) OR (FriendList.p_user2 = @userName AND FriendList.p_user1 = username)";
 
             SqlConnectionController connectionController = SqlManager.Instance.GetConnection();
             SqlResult sqlResult = SqlResult.None;
@@ -31,9 +31,9 @@ namespace SuperBilliardServer.Sql
             {
                 command.Parameters.AddWithValue("@userName", userName);
 
-                using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                using (SqlDataReader reader = await command.ExecuteReaderAsync().ConfigureAwait(true))
                 {
-                    while (await reader.ReadAsync())
+                    while (await reader.ReadAsync().ConfigureAwait(true))
                     {
                         PlayerMessage playerMessage = PlayerMessage.Create();
                         playerMessage.Username = reader.GetString(0);
@@ -47,8 +47,8 @@ namespace SuperBilliardServer.Sql
 
                         packet.FriendMessages.Add(playerMessage);
                     }
-                    sqlResult = SqlResult.Success;
 
+                    sqlResult = SqlResult.Success;
                     if (packet.FriendMessages.Count == 0)
                     {
                         packet.Result = FriendHandleResult.None;
@@ -59,9 +59,9 @@ namespace SuperBilliardServer.Sql
                     }
                 }
             }
+
             SqlManager.Instance.ReleaseConnection(connectionController);
             return sqlResult;
-
         }
 
         public async Task<SqlResult> GetFriendRequestList(string userName, SCFriendRequestList packet)
@@ -72,14 +72,13 @@ namespace SuperBilliardServer.Sql
             const string getFriendRequestListSql = "SELECT senderUserName,p_nickname,p_description,p_faceId,p_hairId,p_bodyId,p_kitId FROM FriendRequest," +
                                                     "PlayerMessage WHERE (FriendRequest.senderUserName = PlayerMessage.p_userName AND FriendRequest.recvUserName = @userName)";
 
-
             using (SqlCommand command = new SqlCommand(getFriendRequestListSql, connectionController.Connection))
             {
                 command.Parameters.AddWithValue("@userName", userName);
 
-                var checkReader = await command.ExecuteReaderAsync();
+                var checkReader = await command.ExecuteReaderAsync().ConfigureAwait(true);
 
-                while (await checkReader.ReadAsync())
+                while (await checkReader.ReadAsync().ConfigureAwait(true))
                 {
                     PlayerMessage playerMessage = PlayerMessage.Create();
                     playerMessage.Username = checkReader.GetString(0);
@@ -122,6 +121,7 @@ namespace SuperBilliardServer.Sql
             {
                 checkFriendListCommand.Parameters.AddWithValue("@username", userName);
                 checkFriendListCommand.Parameters.AddWithValue("@friend", targetUserName);
+
                 using (SqlDataReader reader = await checkFriendListCommand.ExecuteReaderAsync())
                 {
                     if (await reader.ReadAsync())
@@ -178,6 +178,7 @@ namespace SuperBilliardServer.Sql
                     sqlResult = SqlResult.Failure;
                 }
             }
+
             SqlManager.Instance.ReleaseConnection(connectionController);
             return sqlResult;
         }
@@ -232,7 +233,7 @@ namespace SuperBilliardServer.Sql
                         {
                             deleteCommand.Parameters.AddWithValue("@userName", userName);
                             deleteCommand.Parameters.AddWithValue("@requesterName", targetUserName);
-                            await deleteCommand.ExecuteNonQueryAsync();
+                            await deleteCommand.ExecuteNonQueryAsync().ConfigureAwait(true);
                         }
                     }
                     else if (state == FriendRequestState.Refuse)

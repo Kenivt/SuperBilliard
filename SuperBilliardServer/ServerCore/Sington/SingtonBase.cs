@@ -39,9 +39,10 @@ namespace ServerCore.Sington
             Instance.Dispose();
             Instance = null;
         }
+
+        //移除所有的任务
         public virtual void Dispose()
         {
-
         }
     }
 }

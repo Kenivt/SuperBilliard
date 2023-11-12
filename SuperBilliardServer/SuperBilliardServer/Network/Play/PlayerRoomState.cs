@@ -22,7 +22,6 @@ namespace SuperBilliardServer.Network.Play
             }
         }
 
-
         internal static PlayerRoomState Create(Player player)
         {
             PlayerRoomState playerRoomState = ReferencePool.Acquire<PlayerRoomState>();

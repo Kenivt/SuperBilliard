@@ -9,6 +9,7 @@ namespace SuperBilliardServer.Sql
     {
         Task Login(string userName, string password, SCLogin sCLogin);
         Task<bool> Rigister(string username, string password);
+        Task UnloginAsync(string userName);
         void Unlogin(string userName);
     }
 
@@ -25,7 +26,7 @@ namespace SuperBilliardServer.Sql
             SqlCommand command = new SqlCommand("SELECT p_password, p_islogin FROM PlayerData WHERE p_userName = @userName", connection);
             command.Parameters.AddWithValue("@userName", userName);
 
-            SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reader = await command.ExecuteReaderAsync().ConfigureAwait(true);
 
             if (reader.Read())
             {
@@ -41,7 +42,7 @@ namespace SuperBilliardServer.Sql
 
                         command = new SqlCommand("UPDATE PlayerData SET p_islogin = 1 WHERE p_userName = @userName", connection);
                         command.Parameters.AddWithValue("@userName", userName);
-                        await command.ExecuteNonQueryAsync();
+                        await command.ExecuteNonQueryAsync().ConfigureAwait(true);
                         sCLogin.Username = userName;
                         sCLogin.Result = ReturnResult.Success;
                     }
@@ -65,9 +66,10 @@ namespace SuperBilliardServer.Sql
 
         public async Task<bool> Rigister(string username, string password)
         {
+            bool flag = false;
             var controller = SqlManager.Instance.GetConnection();
             var connection = controller.Connection;
-            bool flag = false;
+
             using (SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM PlayerData WHERE p_userName = @userName", connection))
             {
                 // 添加参数
@@ -91,12 +93,13 @@ namespace SuperBilliardServer.Sql
                         flag = true;
                     }
                 }
+
                 SqlManager.Instance.ReleaseConnection(controller);
                 return flag;
             }
         }
 
-        public async void Unlogin(string userName)
+        public async Task UnloginAsync(string userName)
         {
             var controller = SqlManager.Instance.GetConnection();
 
@@ -105,6 +108,21 @@ namespace SuperBilliardServer.Sql
             {
                 command.Parameters.AddWithValue("@userName", userName);
                 int count = await command.ExecuteNonQueryAsync();
+                if (count == 0)
+                {
+                    Log.Error("玩家{0}退出登录失败,执行异常", userName);
+                }
+            }
+        }
+        public void Unlogin(string userName)
+        {
+            var controller = SqlManager.Instance.GetConnection();
+
+            SqlConnection connection = controller.Connection;
+            using (SqlCommand command = new SqlCommand("UPDATE PlayerData SET p_islogin = 0 WHERE p_userName = @userName", connection))
+            {
+                command.Parameters.AddWithValue("@userName", userName);
+                int count = command.ExecuteNonQuery();
                 if (count == 0)
                 {
                     Log.Error("玩家{0}退出登录失败,执行异常", userName);

@@ -59,6 +59,7 @@ namespace SuperBilliardServer.Network.User
         public bool SerilizePacketToMessages(Packet packet)
         {
             bool flag = false;
+
             lock (_message)
             {
                 //防止消息过大,消息超出容量则先发送消息
@@ -72,6 +73,7 @@ namespace SuperBilliardServer.Network.User
 
                 flag = _message.SerilizePacket(packet);
             }
+
             return flag;
         }
 

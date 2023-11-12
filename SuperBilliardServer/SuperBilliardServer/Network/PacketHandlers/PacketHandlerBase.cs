@@ -23,6 +23,7 @@ namespace SuperBilliardServer.Network.PacketHandlers
         }
     }
 
+
     public abstract class PacketHandlerBase : IPacketHandler
     {
         public abstract int Id
@@ -33,13 +34,18 @@ namespace SuperBilliardServer.Network.PacketHandlers
         {
             get;
         }
+
         public async void Handle(object sender, Client client, Packet packet)
         {
             try
             {
                 if (IsAsync)
                 {
-                    await HandleAsync(sender, client, packet);
+                    //记录所有运行的Task
+                    Task task = HandleAsync(sender, client, packet);
+                    PacketManager.Instance.AddRunningTask(task);
+                    await task;
+                    PacketManager.Instance.RemoveRunnedTask(task);
                 }
                 else
                 {
@@ -53,6 +59,7 @@ namespace SuperBilliardServer.Network.PacketHandlers
                     this.GetType().ToString(), e.Message);
             }
         }
+
         public abstract Task HandleAsync(object sender, Client client, Packet packet);
         public abstract void HandleSync(object sender, Client client, Packet packet);
     }

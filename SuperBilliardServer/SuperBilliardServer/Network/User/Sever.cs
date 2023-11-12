@@ -17,6 +17,7 @@ namespace SuperBilliardServer.Network.User
             _socket.Listen(4);
         }
 
+
         public void Init()
         {
             _source = new CancellationTokenSource();
@@ -48,7 +49,7 @@ namespace SuperBilliardServer.Network.User
             }
         }
 
-        public string GetClientId(Socket client)
+        public static string GetClientId(Socket client)
         {
             if (client.RemoteEndPoint == null)
             {

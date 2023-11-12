@@ -1,11 +1,12 @@
 ﻿using SuperBilliardServer.Debug;
-using System.Collections.Concurrent;
 
 namespace SuperBilliardServer.Sql
 {
     public class SqlManager : ServerCore.Sington.SingtonBase<SqlManager>
     {
-        private readonly ConcurrentStack<SqlConnectionController> sqlConnectionControllers = new ConcurrentStack<SqlConnectionController>();
+        private readonly Stack<SqlConnectionController> sqlConnectionControllers
+            = new Stack<SqlConnectionController>();
+        private Dictionary<Type, ISqlHandler> _sqlHandlerDic = new Dictionary<Type, ISqlHandler>();
 
         public int AcquireCount { get; private set; }
         public int ReleaseCount { get; private set; }
@@ -14,19 +15,22 @@ namespace SuperBilliardServer.Sql
 
         public SqlConnectionController GetConnection()
         {
-            if (sqlConnectionControllers.TryPop(out SqlConnectionController controller))
+            lock (sqlConnectionControllers)
             {
-                AcquireCount++;
-                UsingCount++;
-                controller.OpenConnect();
-                return controller;
-            }
-            else
-            {
-                SqlConnectionController sqlConnectionController = new SqlConnectionController();
-                UsingCount++;
-                sqlConnectionController.OpenConnect();
-                return sqlConnectionController;
+                if (sqlConnectionControllers.TryPop(out SqlConnectionController controller))
+                {
+                    AcquireCount++;
+                    UsingCount++;
+                    controller.OpenConnect();
+                    return controller;
+                }
+                else
+                {
+                    SqlConnectionController sqlConnectionController = new SqlConnectionController();
+                    UsingCount++;
+                    sqlConnectionController.OpenConnect();
+                    return sqlConnectionController;
+                }
             }
         }
 
@@ -36,14 +40,15 @@ namespace SuperBilliardServer.Sql
             {
                 return;
             }
-            ReleaseCount++;
-            UsingCount--;
-            IdelCount++;
-            sqlConnectionController.CloseConnect();
-            sqlConnectionControllers.Push(sqlConnectionController);
+            lock (sqlConnectionControllers)
+            {
+                ReleaseCount++;
+                UsingCount--;
+                IdelCount++;
+                sqlConnectionController.CloseConnect();
+                sqlConnectionControllers.Push(sqlConnectionController);
+            }
         }
-
-        private Dictionary<Type, ISqlHandler> _sqlHandlerDic = new Dictionary<Type, ISqlHandler>();
 
         public T GetSqlHandler<T>() where T : ISqlHandler
         {
@@ -62,13 +67,16 @@ namespace SuperBilliardServer.Sql
                 Log.Error("RigisterSqlHandler error, '{0}' is already exist", type.Name);
             }
         }
+
         public override void Dispose()
         {
-            while (sqlConnectionControllers.TryPop(out SqlConnectionController controller))
+            lock (sqlConnectionControllers)
             {
-                controller?.Dispose();
+                while (sqlConnectionControllers.TryPop(out SqlConnectionController controller))
+                {
+                    controller?.Dispose();
+                }
             }
-            base.Dispose();
         }
     }
 }

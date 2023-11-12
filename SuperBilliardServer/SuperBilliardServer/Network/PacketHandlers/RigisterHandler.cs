@@ -2,8 +2,8 @@
 using GameFramework;
 using SuperBilliardServer.Sql;
 using SuperBilliardServer.Debug;
-using SuperBilliardServer.Network.User;
 using SuperBilliardServer.Network.Packets;
+using SuperBilliardServer.Network.User;
 
 namespace SuperBilliardServer.Network.PacketHandlers
 {

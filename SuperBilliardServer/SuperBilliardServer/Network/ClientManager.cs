@@ -54,6 +54,7 @@ namespace SuperBilliardServer.Network
         private ConcurrentDictionary<string, ClientInfo> _rigisterClientDic;
         private ConcurrentDictionary<string, ClientInfo> _connectClientDic;
         private ConcurrentDictionary<string, ClientInfo> _disConnectClientDic;
+
         public int RigisterClientCount => _rigisterClientDic.Count;
         public int ConnectClientCount => _connectClientDic.Count;
 
@@ -198,9 +199,6 @@ namespace SuperBilliardServer.Network
             Queue<string> disConnectQueue = new Queue<string>();
             Queue<string> unrigisterQueue = new Queue<string>();
 
-            disConnectQueue.Clear();
-            unrigisterQueue.Clear();
-
             foreach (var item in _connectClientDic)
             {
                 CheckClientState(item.Value, disConnectQueue, Constant.ServerConstant.DisConnnectDataLineTime);
@@ -224,10 +222,7 @@ namespace SuperBilliardServer.Network
             while (unrigisterQueue.Count > 0)
             {
                 string key = unrigisterQueue.Dequeue();
-                if (_disConnectClientDic.TryRemove(key, out ClientInfo value))
-                {
-
-                }
+                _disConnectClientDic.TryRemove(key, out ClientInfo value);
 
                 if (_rigisterClientDic.TryRemove(key, out ClientInfo clientInfo1))
                 {

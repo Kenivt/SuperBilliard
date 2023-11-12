@@ -13,6 +13,7 @@ public class Program
         CommandParser();
         while (_serverRunning)
         {
+            //防止CPU持续满载
             Thread.Sleep(1);
             ServerBase.Update();
         }

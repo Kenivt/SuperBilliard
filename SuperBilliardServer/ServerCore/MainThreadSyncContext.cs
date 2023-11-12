@@ -27,6 +27,12 @@ namespace ServerCore
             }
         }
 
+        //同步上下文的机制，设定此同步类才可以
+        public override void Post(SendOrPostCallback callback, object state)
+        {
+            this.Post(() => callback(state));
+        }
+
         public void Post(Action action)
         {
             _actions.Enqueue(action);
@@ -40,6 +46,11 @@ namespace ServerCore
         public MainThreadSyncContext()
         {
             SynchronizationContext.SetSynchronizationContext(_context);
+        }
+
+        public void Post(SendOrPostCallback callback, object state)
+        {
+            this.Post(() => callback(state));
         }
 
         public void Update()

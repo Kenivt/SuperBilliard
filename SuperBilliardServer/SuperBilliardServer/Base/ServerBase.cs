@@ -19,21 +19,19 @@ namespace SuperBilliardServer
 
         private static readonly Queue<ISington> _updateQueue = new Queue<ISington>();
 
-        private static Server _server;
-
         public static void Init()
         {
             AddSington<MainThreadSyncContext>();
-            AddSington<ClientManager>();
             AddSington<GameManager>();
             AddSington<PacketManager>();
-            AddSington<SqlManager>();
+            AddSington<ServerManager>();
+            AddSington<ClientManager>();
             AddSington<PlayerManager>();
+            AddSington<SqlManager>();
 
-            //注册一下...
+            //注册一下
             GameManager.Instance.RigisterGameGroup(new MatchGameGroup(GameType.FancyMatch));
             GameManager.Instance.RigisterGameGroup(new MatchGameGroup(GameType.SnookerMatch));
-
             GameManager.Instance.RigisterGameGroup(new FirendGameGroup(GameType.FancyFriend));
             GameManager.Instance.RigisterGameGroup(new FirendGameGroup(GameType.SnookerFriend));
 
@@ -41,9 +39,9 @@ namespace SuperBilliardServer
             SqlManager.Instance.RigisterSqlHandler<IFriendSqlHandler>(new FriendSqlHandler());
             SqlManager.Instance.RigisterSqlHandler<ILoginSqlHandler>(new LogicSqlHandler());
             SqlManager.Instance.RigisterSqlHandler<IPlayerMessageSqlHandler>(new PlayerMessageSqlHandler());
-            //创建一个服务器
-            _server = new Server(IPAddress.Parse("127.0.0.1"), 8080);
-            _server.Init();
+
+            //添加服务器
+            ServerManager.Instance.AddServer(IPAddress.Parse("127.0.0.1"), 8080);
         }
 
         private static void AddSington<T>() where T : ISington, new()

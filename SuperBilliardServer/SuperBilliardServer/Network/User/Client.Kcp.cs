@@ -37,6 +37,7 @@ namespace SuperBilliardServer.Network.User
             IPAddress iPAddress = IPAddress.Parse(words[0]);
             int port = Convert.ToInt32(words[1]);
             IPEndPoint iPEndPoint = new IPEndPoint(iPAddress, port);
+
             if (Kcp == null)
             {
                 Kcp = new KcpClient(IPAddress.Loopback, KcpClient.GetKcpPort(), iPEndPoint);
@@ -45,6 +46,7 @@ namespace SuperBilliardServer.Network.User
             {
                 Kcp.TargetEndPoint = iPEndPoint;
             }
+
             if (KcpSource == null)
             {
                 KcpSource = new CancellationTokenSource();

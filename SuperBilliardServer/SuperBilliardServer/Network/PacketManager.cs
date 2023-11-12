@@ -5,9 +5,9 @@ using ServerCore.Sington;
 using SuperBilliardServer.Tools;
 using SuperBilliardServer.Debug;
 using SuperBilliardServer.Constant;
+using SuperBilliardServer.Network.User;
 using SuperBilliardServer.Network.Packets;
 using SuperBilliardServer.Network.PacketHandlers;
-using SuperBilliardServer.Network.User;
 
 namespace SuperBilliardServer.Network
 {
@@ -16,6 +16,8 @@ namespace SuperBilliardServer.Network
         private readonly Dictionary<int, Type> _serverToClientPacketTypes = new Dictionary<int, Type>();
 
         private readonly Dictionary<int, IPacketHandler> _packetHandlerDic = new Dictionary<int, IPacketHandler>();
+
+        private readonly HashSet<Task> _runningTaskSet = new HashSet<Task>();
 
         public PacketManager()
         {
@@ -92,6 +94,26 @@ namespace SuperBilliardServer.Network
             });
         }
 
+        public void AddRunningTask(Task task)
+        {
+            lock (task)
+            {
+                if (_runningTaskSet.Contains(task))
+                {
+                    Log.Error("错误，重复添加Task");
+                    return;
+                }
+                _runningTaskSet.Add(task);
+            }
+        }
+
+        public void RemoveRunnedTask(Task task)
+        {
+            lock (task)
+            {
+                _runningTaskSet.Remove(task);
+            }
+        }
         // -----------------------------------序列化部分-------------------------------
 
         private readonly List<byte[]> _bytesList = new List<byte[]>() { new byte[1], new byte[2], new byte[2] };
@@ -184,5 +206,10 @@ namespace SuperBilliardServer.Network
             return csPacketHeader;
         }
 
+        public override void Dispose()
+        {
+            //等待所有任务退出
+            Task.WaitAll(_runningTaskSet.ToArray());
+        }
     }
 }

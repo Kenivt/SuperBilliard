@@ -8,7 +8,6 @@ namespace SuperBilliardServer
     public class KcpClient : IKcpCallback
     {
         private UdpClient _client;
-
         public SimpleSegManager.Kcp kcp { get; }
 
         public IPEndPoint ownIPEndPoint

@@ -14,12 +14,9 @@ namespace SuperBilliardServer.Network.User
         /// <param name="username">对应的玩家名称</param>
         public void AddOnlineFriend(string username)
         {
-            lock (_onlineFriendList)
+            if (_onlineFriendList.Contains(username) == false)
             {
-                if (_onlineFriendList.Contains(username) == false)
-                {
-                    _onlineFriendList.Add(username);
-                }
+                _onlineFriendList.Add(username);
             }
         }
 
@@ -60,10 +57,7 @@ namespace SuperBilliardServer.Network.User
         /// <param name="username"></param>
         public void RemoveOnlineFriend(string username)
         {
-            lock (_onlineFriendList)
-            {
-                _onlineFriendList.Remove(username);
-            }
+            _onlineFriendList.Remove(username);
         }
         /// <summary>
         /// 清除一下
